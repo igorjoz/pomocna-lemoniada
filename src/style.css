@@ -589,10 +589,22 @@ nav a:hover::after {
   margin-top: 22px;
 }
 
-.map-illustration {
-  align-self: center;
-  filter: drop-shadow(0 20px 30px rgb(9 39 29 / 25%));
-  transform: rotate(3deg);
+.map-embed {
+  align-self: stretch;
+  min-height: 430px;
+  overflow: hidden;
+  border: 4px solid var(--cream);
+  border-radius: 28px;
+  background: var(--cream);
+  box-shadow: 0 20px 30px rgb(9 39 29 / 25%);
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  border: 0;
 }
 
 .story {
@@ -1028,6 +1040,20 @@ nav a:hover::after {
   text-decoration: none;
 }
 
+.creator-credit {
+  display: flex;
+  align-items: flex-end;
+  justify-self: end;
+  flex-direction: column;
+}
+
+.creator-credit > span {
+  margin-top: -7px;
+  color: rgb(255 255 255 / 65%);
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
 .creator:hover {
   color: var(--yellow);
 }
@@ -1110,9 +1136,14 @@ nav a:hover::after {
     grid-template-columns: 1fr;
   }
 
-  .map-illustration {
+  .map-embed {
     width: min(100%, 500px);
-    margin: 0 auto -40px;
+    min-height: 400px;
+    margin: 0 auto;
+  }
+
+  .map-embed iframe {
+    min-height: 400px;
   }
 
   .story-grid {
@@ -1232,8 +1263,9 @@ nav a:hover::after {
     height: 42px;
   }
 
-  .map-illustration {
-    margin-bottom: -20px;
+  .map-embed,
+  .map-embed iframe {
+    min-height: 340px;
   }
 
   .portrait-frame {
@@ -1290,7 +1322,9 @@ nav a:hover::after {
     text-align: center;
   }
 
-  .creator {
+  .creator,
+  .creator-credit {
+    align-items: center;
     justify-self: center;
   }
 
