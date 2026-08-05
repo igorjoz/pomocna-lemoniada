@@ -23,7 +23,7 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#start" aria-label="Lemoniada, która pomaga — strona główna">
+        <a class="brand" href="#start" aria-label="Lemoniada, która pomaga — strona główna" data-lemon-brand>
           <span class="brand-lemon" aria-hidden="true">🍋</span>
           <span>Lemoniada, która pomaga</span>
         </a>
@@ -52,7 +52,7 @@
             <p class="hero-note"><span aria-hidden="true">☀</span> Stoisko działa do odwołania — zależnie od pogody i możliwości.</p>
           </div>
 
-          <figure class="photo-placeholder hero-photo" data-reveal>
+          <figure class="photo-placeholder hero-photo" tabindex="0" aria-label="Ożyw ilustrację stoiska z lemoniadą" data-reveal data-lemonade-scene>
             <div class="tape tape--top" aria-hidden="true"></div>
             <svg viewBox="0 0 600 500" role="img" aria-label="Ilustracja stolika z lemoniadą — miejsce na przyszłe zdjęcie dziewczynek przy stoisku">
               <rect width="600" height="500" rx="40" fill="#ffe998" />
@@ -64,16 +64,20 @@
               <path d="M275 160h72l14 102h-100l14-102Z" fill="#fffdf5" stroke="#18392f" stroke-width="8" />
               <path d="M288 178h46l8 67h-62l8-67Z" fill="#ffcf44" />
               <path d="M272 148h78" stroke="#18392f" stroke-width="12" stroke-linecap="round" />
-              <circle cx="297" cy="204" r="10" fill="#fff8df" />
-              <circle cx="326" cy="222" r="8" fill="#fff8df" />
+              <circle class="scene-bubble scene-bubble--one" cx="297" cy="204" r="10" fill="#fff8df" />
+              <circle class="scene-bubble scene-bubble--two" cx="326" cy="222" r="8" fill="#fff8df" />
               <path d="M361 228h67v38h-67z" fill="#fffdf5" stroke="#18392f" stroke-width="6" />
               <path d="M382 228v-45" stroke="#18392f" stroke-width="7" />
-              <path d="M382 185l19-18" stroke="#278867" stroke-width="8" stroke-linecap="round" />
-              <path d="M382 187l-17-20" stroke="#278867" stroke-width="8" stroke-linecap="round" />
-              <circle cx="128" cy="127" r="43" fill="#fff8df" stroke="#18392f" stroke-width="7" />
-              <path d="M128 84v86M85 127h86M98 97l60 60M158 97l-60 60" stroke="#f6bd30" stroke-width="4" />
-              <path d="M134 81c15-25 39-18 47-5-10 20-30 25-47 5Z" fill="#278867" stroke="#18392f" stroke-width="5" />
-              <path d="M493 252c0-17 24-25 34-8 10-17 34-9 34 8 0 20-34 38-34 38s-34-18-34-38Z" fill="#ef6f71" />
+              <g class="scene-leaves">
+                <path d="M382 185l19-18" stroke="#278867" stroke-width="8" stroke-linecap="round" />
+                <path d="M382 187l-17-20" stroke="#278867" stroke-width="8" stroke-linecap="round" />
+              </g>
+              <g class="scene-lemon">
+                <circle cx="128" cy="127" r="43" fill="#fff8df" stroke="#18392f" stroke-width="7" />
+                <path d="M128 84v86M85 127h86M98 97l60 60M158 97l-60 60" stroke="#f6bd30" stroke-width="4" />
+                <path d="M134 81c15-25 39-18 47-5-10 20-30 25-47 5Z" fill="#278867" stroke="#18392f" stroke-width="5" />
+              </g>
+              <path class="scene-heart" d="M493 252c0-17 24-25 34-8 10-17 34-9 34 8 0 20-34 38-34 38s-34-18-34-38Z" fill="#ef6f71" />
             </svg>
             <figcaption><span aria-hidden="true">📷</span> Tu pojawi się zdjęcie naszych małych bohaterek</figcaption>
           </figure>
@@ -89,19 +93,19 @@
             <p>Dziewczynki wpadły na prosty i piękny pomysł: własnymi rękami przygotować stoisko, zaprosić mieszkańców Kwidzyna i każdą zebraną złotówkę przekazać na pomoc.</p>
           </div>
           <div class="feature-grid">
-            <article class="feature-card feature-card--yellow" data-reveal>
+            <article class="feature-card feature-card--yellow" tabindex="0" data-reveal>
               <div class="feature-icon" aria-hidden="true">🍋</div>
               <span class="card-number">01</span>
               <h3>Domowa lemoniada</h3>
               <p>Orzeźwiająca, przygotowana z zaangażowaniem i podawana z najlepszym składnikiem — dobrym sercem.</p>
             </article>
-            <article class="feature-card feature-card--pink" data-reveal>
+            <article class="feature-card feature-card--pink" tabindex="0" data-reveal>
               <div class="feature-icon" aria-hidden="true">🍰</div>
               <span class="card-number">02</span>
               <h3>Pyszne ciasto</h3>
               <p>Do lemoniady czeka coś słodkiego. Każdy kawałek dokłada małą cegiełkę do wspólnego celu.</p>
             </article>
-            <article class="feature-card feature-card--green" data-reveal>
+            <article class="feature-card feature-card--green" tabindex="0" data-reveal>
               <div class="feature-icon" aria-hidden="true">♥</div>
               <span class="card-number">03</span>
               <h3>Szczytny cel</h3>
