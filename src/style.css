@@ -687,6 +687,58 @@ nav a:hover::after {
   border: 0;
 }
 
+.supporter {
+  padding: 0 0 clamp(76px, 9vw, 128px);
+  background: var(--cream-2);
+}
+
+.supporter-card {
+  display: grid;
+  align-items: center;
+  padding: clamp(30px, 5vw, 54px);
+  border: 2px solid var(--ink);
+  border-radius: 32px;
+  background: var(--white);
+  box-shadow: 9px 10px 0 var(--yellow);
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.52fr);
+  gap: clamp(32px, 6vw, 78px);
+}
+
+.supporter-copy h2 {
+  margin-bottom: 16px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.supporter-copy p:last-child {
+  max-width: 650px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.supporter-logo {
+  display: grid;
+  min-height: 210px;
+  place-items: center;
+  padding: 26px;
+  border-radius: 24px;
+  color: var(--ink);
+  background: var(--cream);
+  font-size: 0.84rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.supporter-logo:hover {
+  background: #ffe889;
+  transform: rotate(1deg) translateY(-3px);
+}
+
+.supporter-logo img {
+  width: min(100%, 250px);
+  height: auto;
+}
+
 .story {
   background: #f7f3e8;
 }
@@ -955,6 +1007,7 @@ nav a:hover::after {
 }
 
 .gallery-placeholder {
+  position: relative;
   display: grid;
   align-content: center;
   justify-items: center;
@@ -969,13 +1022,24 @@ nav a:hover::after {
   text-align: center;
 }
 
-.gallery-placeholder span {
-  margin-bottom: 14px;
-  font-size: 4rem;
-  filter: drop-shadow(4px 5px 0 rgb(24 57 47 / 14%));
+.gallery-placeholder > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-placeholder:hover > img {
+  transform: scale(1.035);
 }
 
 .gallery-placeholder figcaption {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 20px;
   max-width: 210px;
   padding: 8px 13px;
   border: 2px solid var(--ink);
@@ -1306,6 +1370,14 @@ nav a:hover::after {
     grid-template-columns: 1fr;
   }
 
+  .supporter-card {
+    grid-template-columns: 1fr;
+  }
+
+  .supporter-logo {
+    min-height: 190px;
+  }
+
   .map-embed {
     width: min(100%, 500px);
     min-height: 400px;
@@ -1436,6 +1508,18 @@ nav a:hover::after {
   .map-embed,
   .map-embed iframe {
     min-height: 340px;
+  }
+
+  .supporter-card {
+    width: calc(100% - 20px);
+    padding: 30px 22px;
+    border-radius: 26px;
+    box-shadow: 7px 8px 0 var(--yellow);
+  }
+
+  .supporter-logo {
+    min-height: 170px;
+    padding: 22px;
   }
 
   .portrait-frame {
