@@ -1,0 +1,19 @@
+{
+  "name": "pomocna-lemoniada",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "@fontsource-variable/fredoka": "^5.2.6",
+    "@fontsource-variable/nunito-sans": "^5.2.6"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
