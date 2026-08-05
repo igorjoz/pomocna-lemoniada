@@ -1044,6 +1044,7 @@ nav a:hover::after {
   padding: 8px 13px;
   border: 2px solid var(--ink);
   border-radius: 10px;
+  color: var(--ink);
   background: var(--white);
   font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 0.86rem;
