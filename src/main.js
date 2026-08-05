@@ -1,4 +1,4 @@
-import '@fontsource-variable/fredoka';
+import '@fontsource-variable/nunito';
 import '@fontsource-variable/nunito-sans';
 import './style.css';
 

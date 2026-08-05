@@ -117,8 +117,8 @@ h1,
 h2,
 h3 {
   margin-top: 0;
-  font-family: 'Fredoka Variable', 'Arial Rounded MT Bold', system-ui, sans-serif;
-  font-weight: 700;
+  font-family: 'Nunito Variable', 'Arial Rounded MT Bold', system-ui, sans-serif;
+  font-weight: 900;
   letter-spacing: -0.035em;
   line-height: 1.05;
 }
@@ -182,7 +182,7 @@ h3 {
   align-items: center;
   gap: 10px;
   color: var(--ink);
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 1.06rem;
   font-weight: 700;
   line-height: 1.15;
@@ -367,7 +367,7 @@ nav a:hover::after {
 
 .hero-photo figcaption {
   padding: 15px 10px 3px;
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 0.96rem;
   font-weight: 650;
   line-height: 1.3;
@@ -391,7 +391,7 @@ nav a:hover::after {
 .hero-doodle {
   position: absolute;
   z-index: 1;
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-weight: 800;
 }
 
@@ -501,7 +501,7 @@ nav a:hover::after {
   top: 23px;
   right: 25px;
   color: var(--ink);
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 2.7rem;
   font-weight: 750;
 }
@@ -661,7 +661,7 @@ nav a:hover::after {
   color: var(--white);
   background: var(--coral);
   box-shadow: 8px 8px 0 var(--ink);
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 4.2rem;
   font-weight: 700;
 }
@@ -787,7 +787,7 @@ nav a:hover::after {
   border-radius: 999px;
   color: var(--white);
   background: var(--coral);
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   line-height: 1.2;
@@ -800,7 +800,7 @@ nav a:hover::after {
   top: 24px;
   right: 25px;
   color: rgb(24 57 47 / 18%);
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -889,7 +889,7 @@ nav a:hover::after {
   border: 2px solid var(--ink);
   border-radius: 10px;
   background: var(--white);
-  font-family: 'Fredoka Variable', system-ui, sans-serif;
+  font-family: 'Nunito Variable', system-ui, sans-serif;
   font-size: 0.86rem;
   font-weight: 650;
   line-height: 1.3;
