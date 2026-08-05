@@ -380,8 +380,9 @@ nav a:hover::after {
   transform: rotate(2deg);
 }
 
-.hero-photo svg {
+.hero-photo img {
   width: 100%;
+  height: auto;
 }
 
 .hero-photo figcaption {
