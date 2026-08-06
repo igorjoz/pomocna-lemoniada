@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/pomocna-lemoniada-2/',
+  // Relative paths make the production build portable to any hosting folder.
+  base: './',
   build: {
     target: 'es2020',
   },
