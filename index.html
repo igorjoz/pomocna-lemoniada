@@ -28,33 +28,39 @@
           <span class="brand-lemon" aria-hidden="true">🍋</span>
           <span>Lemoniada, która pomaga</span>
         </a>
-        <nav aria-label="Główna nawigacja">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+        <nav id="primary-navigation" aria-label="Główna nawigacja" data-navigation>
           <a href="#o-akcji">O akcji</a>
           <a href="#gdzie">Gdzie jesteśmy</a>
           <a href="#pomoc">Jak pomóc</a>
+          <a class="nav-mobile-cta" href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer" data-donate>Wesprzyj <span aria-hidden="true">♥</span></a>
         </nav>
-        <a class="header-cta" href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer">Wesprzyj <span aria-hidden="true">♥</span></a>
+        <a class="header-cta" href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer" data-donate>Wesprzyj <span aria-hidden="true">♥</span></a>
       </div>
     </header>
 
     <main id="tresc">
       <section class="hero" id="start">
-        <div class="hero-doodle hero-doodle--one" aria-hidden="true">✦</div>
-        <div class="hero-doodle hero-doodle--two" aria-hidden="true">♥</div>
+        <div class="hero-doodle hero-doodle--one" aria-hidden="true" data-depth="1.3">✦</div>
+        <div class="hero-doodle hero-doodle--two" aria-hidden="true" data-depth="0.8">♥</div>
         <div class="container hero-grid">
-          <div class="hero-copy" data-reveal>
+          <div class="hero-copy" data-reveal="left">
             <p class="eyebrow"><span aria-hidden="true">●</span> Kwidzyn pomaga</p>
             <h1>Lemoniada,<br /><span>która pomaga</span></h1>
             <p class="hero-lead">Kilka dziewczynek, dzbanek domowej lemoniady i naprawdę wielkie serca. Cały dochód ze stoiska pomaga Małgorzacie w walce o zdrowie.</p>
             <div class="button-row">
               <a class="button button--primary" href="#gdzie">Przyjdź na lemoniadę <span aria-hidden="true">↓</span></a>
-              <a class="button button--secondary" href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer">Wesprzyj online <span aria-hidden="true">↗</span></a>
+              <a class="button button--secondary" href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer" data-donate>Wesprzyj online <span aria-hidden="true">↗</span></a>
             </div>
             <p class="hero-note"><span aria-hidden="true">☀</span> Stoisko działa do odwołania — zależnie od pogody i możliwości.</p>
           </div>
 
-          <figure class="photo-placeholder hero-photo" data-reveal>
+          <figure class="photo-placeholder hero-photo" data-reveal="right" data-depth="0.45">
             <div class="tape tape--top" aria-hidden="true"></div>
+            <div class="hero-sticker" data-hero-sticker><strong>100%</strong><span>dochodu<br />na leczenie</span></div>
             <img
               src="/pomocna-lemoniada/1-hero.webp"
               alt="Papierowa ilustracja trzech dziewczynek sprzedających lemoniadę i domowe ciasto na dobroczynnym stoisku"
@@ -97,6 +103,13 @@
           </div>
         </div>
       </section>
+
+      <div class="cup-path" aria-hidden="true" data-cup-path>
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path class="cup-path__line" d="M35 67 C240 5 380 116 590 57 S950 4 1165 63" />
+        </svg>
+        <span class="cup-path__cup">🥤</span><span class="cup-path__lemon">🍋</span>
+      </div>
 
       <section class="location section" id="gdzie">
         <div class="container location-card" data-reveal>
@@ -143,14 +156,13 @@
 
       <section class="story section" id="historia">
         <div class="container story-grid">
-          <div class="story-portrait" data-reveal>
+          <div class="story-portrait" data-reveal="left">
             <div class="portrait-frame">
-              <div class="portrait-symbol" aria-hidden="true">M</div>
-              <p>Miejsce na zdjęcie<br />za zgodą Małgorzaty</p>
+              <img src="/pomocna-lemoniada/malgorzata-symboliczna.webp" alt="Symboliczna papierowa ilustracja kobiety spoglądającej w stronę światła; nie jest to wizerunek Małgorzaty" width="900" height="1125" loading="lazy" decoding="async" />
             </div>
             <span class="heart-sticker" aria-hidden="true">♥</span>
           </div>
-          <div class="story-copy" data-reveal>
+          <div class="story-copy" data-reveal="right">
             <p class="eyebrow">Dla kogo pomagamy?</p>
             <h2>Pomóżmy Małgorzacie <span>wrócić do zdrowia</span></h2>
             <p class="story-lead">Małgorzata Rojek z Kwidzyna zmaga się z rozsianym nowotworem piersi i przechodzi intensywne leczenie. Choroba dotknęła rodzinę szczególnie mocno — jej mąż również mierzy się z następstwami własnej walki z nowotworem.</p>
@@ -169,6 +181,13 @@
         </div>
       </section>
 
+      <div class="cup-path cup-path--reverse" aria-hidden="true" data-cup-path>
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path class="cup-path__line" d="M35 50 C235 112 420 3 620 63 S955 116 1165 48" />
+        </svg>
+        <span class="cup-path__cup">🥤</span><span class="cup-path__lemon">🍋</span>
+      </div>
+
       <section class="help section" id="pomoc">
         <div class="container">
           <div class="section-heading centered" data-reveal>
@@ -176,24 +195,24 @@
             <h2>Trzy proste sposoby,<br /><span>żeby pomóc</span></h2>
           </div>
           <div class="steps-grid">
-            <article class="step" data-reveal>
+            <article class="step" data-reveal="card">
               <span class="step-number">1</span>
-              <div class="step-icon" aria-hidden="true">🥤</div>
+              <div class="step-icon step-icon--cup" aria-hidden="true">🥤</div>
               <h3>Odwiedź stoisko</h3>
               <p>Wpadnij po lemoniadę lub ciasto. Będzie nam bardzo miło Cię zobaczyć!</p>
               <a href="#gdzie">Sprawdź lokalizację <span aria-hidden="true">→</span></a>
             </article>
-            <article class="step step--featured" data-reveal>
+            <article class="step step--featured" data-reveal="card">
               <span class="step-ribbon">Pomagam teraz</span>
               <span class="step-number">2</span>
-              <div class="step-icon" aria-hidden="true">♥</div>
+              <div class="step-icon step-icon--heart" aria-hidden="true">♥</div>
               <h3>Wpłać online</h3>
               <p>Nie możesz przyjechać? Każda, nawet niewielka wpłata realnie wspiera leczenie.</p>
-              <a href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer">Przejdź do zbiórki <span aria-hidden="true">↗</span></a>
+              <a href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer" data-donate>Przejdź do zbiórki <span aria-hidden="true">↗</span></a>
             </article>
-            <article class="step" data-reveal>
+            <article class="step" data-reveal="card">
               <span class="step-number">3</span>
-              <div class="step-icon" aria-hidden="true">📣</div>
+              <div class="step-icon step-icon--megaphone" aria-hidden="true">📣</div>
               <h3>Podaj dalej</h3>
               <p>Powiedz znajomym i udostępnij akcję. Im więcej osób ją zobaczy, tym większa pomoc.</p>
               <button class="link-button" type="button" data-share>Udostępnij akcję <span aria-hidden="true">→</span></button>
@@ -211,37 +230,61 @@
             </div>
             <p>Cytryny, domowe wypieki i mnóstwo dobrej energii — tak wygląda nasza mała akcja o wielkim znaczeniu.</p>
           </div>
-          <div class="gallery-grid">
+          <div class="gallery-grid" data-gallery data-slider>
             <figure class="gallery-placeholder gallery-placeholder--large" data-reveal>
-              <img src="/pomocna-lemoniada/4-pionowa.webp" alt="Papierowa ilustracja dzieci i dorosłych odwiedzających stoisko z lemoniadą" width="900" height="1124" loading="lazy" decoding="async" />
+              <a class="gallery-link" href="/pomocna-lemoniada/4-pionowa.webp" data-pswp-width="900" data-pswp-height="1124" data-caption="Spotkanie przy stoisku" aria-label="Powiększ ilustrację: Spotkanie przy stoisku">
+                <img src="/pomocna-lemoniada/4-pionowa.webp" alt="Papierowa ilustracja dzieci i dorosłych odwiedzających stoisko z lemoniadą" width="900" height="1124" loading="lazy" decoding="async" />
+                <span class="gallery-zoom" aria-hidden="true">＋</span>
+              </a>
               <figcaption>Spotkanie przy stoisku</figcaption>
             </figure>
             <figure class="gallery-placeholder gallery-placeholder--pink" data-reveal>
-              <img src="/pomocna-lemoniada/2-lemoniada.webp" alt="Papierowa ilustracja trzech szklanek lemoniady z cytryną, lodem i miętą" width="1000" height="750" loading="lazy" decoding="async" />
+              <a class="gallery-link" href="/pomocna-lemoniada/2-lemoniada.webp" data-pswp-width="1000" data-pswp-height="750" data-caption="Domowa lemoniada" aria-label="Powiększ ilustrację: Domowa lemoniada">
+                <img src="/pomocna-lemoniada/2-lemoniada.webp" alt="Papierowa ilustracja trzech szklanek lemoniady z cytryną, lodem i miętą" width="1000" height="750" loading="lazy" decoding="async" />
+                <span class="gallery-zoom" aria-hidden="true">＋</span>
+              </a>
               <figcaption>Domowa lemoniada</figcaption>
             </figure>
             <figure class="gallery-placeholder gallery-placeholder--green" data-reveal>
-              <img src="/pomocna-lemoniada/3-ciasto.webp" alt="Papierowa ilustracja domowego ciasta cytrynowego i dzbanka lemoniady" width="1000" height="750" loading="lazy" decoding="async" />
+              <a class="gallery-link" href="/pomocna-lemoniada/3-ciasto.webp" data-pswp-width="1000" data-pswp-height="750" data-caption="Domowe ciasto" aria-label="Powiększ ilustrację: Domowe ciasto">
+                <img src="/pomocna-lemoniada/3-ciasto.webp" alt="Papierowa ilustracja domowego ciasta cytrynowego i dzbanka lemoniady" width="1000" height="750" loading="lazy" decoding="async" />
+                <span class="gallery-zoom" aria-hidden="true">＋</span>
+              </a>
               <figcaption>Domowe ciasto</figcaption>
             </figure>
             <figure class="gallery-placeholder gallery-placeholder--wide" data-reveal>
-              <img src="/pomocna-lemoniada/5-szeroka.webp" alt="Papierowa ilustracja dłoni podających lemoniadę, ciasto i datek na akcję" width="1400" height="788" loading="lazy" decoding="async" />
+              <a class="gallery-link" href="/pomocna-lemoniada/5-szeroka.webp" data-pswp-width="1400" data-pswp-height="788" data-caption="Każdy gest pomaga" aria-label="Powiększ ilustrację: Każdy gest pomaga">
+                <img src="/pomocna-lemoniada/5-szeroka.webp" alt="Papierowa ilustracja dłoni podających lemoniadę, ciasto i datek na akcję" width="1400" height="788" loading="lazy" decoding="async" />
+                <span class="gallery-zoom" aria-hidden="true">＋</span>
+              </a>
               <figcaption>Każdy gest pomaga</figcaption>
             </figure>
+          </div>
+          <div class="gallery-mobile-nav js-only" data-slider-nav aria-label="Nawigacja galerii">
+            <span class="gallery-swipe-hint">Przesuń, aby zobaczyć więcej</span>
+            <div class="gallery-dots" data-slider-dots></div>
+            <span class="gallery-counter" aria-live="polite" data-slider-counter>1 / 4</span>
           </div>
           <p class="consent-note"><span aria-hidden="true">✦</span> Ilustracje tworzą oprawę graficzną akcji. Prawdziwe zdjęcia dzieci publikujemy wyłącznie za zgodą ich opiekunów.</p>
         </div>
       </section>
 
-      <section class="final-cta section">
+      <div class="cup-path cup-path--final" aria-hidden="true" data-cup-path>
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path class="cup-path__line" d="M35 68 C220 0 430 112 615 53 S950 10 1165 70" />
+        </svg>
+        <span class="cup-path__cup">🥤</span><span class="cup-path__lemon">🍋</span>
+      </div>
+
+      <section class="final-cta section" data-final-cta>
         <div class="final-lemon final-lemon--left" aria-hidden="true">🍋</div>
         <div class="final-lemon final-lemon--right" aria-hidden="true">🍋</div>
         <div class="container final-inner" data-reveal>
           <p class="eyebrow eyebrow--light">Razem możemy więcej</p>
-          <h2>Każdy kubek i każda wpłata<br /><span>mają znaczenie</span></h2>
+          <h2>Każdy kubek i każda wpłata<br /><span class="final-highlight">mają znaczenie</span></h2>
           <p>Zatrzymaj się przy stoisku albo wesprzyj Małgorzatę online. Dziękujemy, że jesteś z nami.</p>
           <div class="button-row button-row--center">
-            <a class="button button--yellow" href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer">Wesprzyj zbiórkę <span aria-hidden="true">♥</span></a>
+            <a class="button button--yellow" href="https://pomagam.cancerfighters.pl/zbiorka/malgorzata-rojek/" target="_blank" rel="noopener noreferrer" data-donate>Wesprzyj zbiórkę <span aria-hidden="true">♥</span></a>
             <a class="button button--outline-light" href="#gdzie">Znajdź stoisko <span aria-hidden="true">↗</span></a>
           </div>
         </div>
