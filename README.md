@@ -36,3 +36,6 @@ Strona zawiera kilka lekkich efektów, które podkreślają jej radosny charakte
 - wpisanie na klawiaturze sekwencji `LEMON` uruchamia ukryty deszcz cytryn.
 
 Efekty nie korzystają z zewnętrznych bibliotek. Tymczasowe cząsteczki są automatycznie usuwane z DOM, nie przechwytują kliknięć i mają ograniczoną liczbę. Przy ustawieniu systemowym `prefers-reduced-motion: reduce` animacje przestrzenne są pomijane, a użytkownik otrzymuje wyłącznie komunikat tekstowy.
+
+
+deployment info
