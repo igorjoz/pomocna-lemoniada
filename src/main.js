@@ -2,8 +2,6 @@ import '@fontsource-variable/nunito';
 import '@fontsource-variable/nunito-sans';
 import './style.css';
 
-document.documentElement.classList.add('js');
-
 const shareButton = document.querySelector('[data-share]');
 const toast = document.querySelector('[data-toast]');
 const lemonBrand = document.querySelector('[data-lemon-brand]');
